@@ -25,11 +25,6 @@ main() #함수에서 세션기술
 
 @st.cache_data
 def slow_cal(x):
-    '''
-    같은 x값이 들어오면 저장된 결과를 사용한다.
-    처음 입력된 값일 때면 3초만 동안 기다린다
-    '''
-    time.sleep(1)
     cal = x*100
     return cal
 
